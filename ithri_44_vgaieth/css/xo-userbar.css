@@ -1,0 +1,57 @@
+
+
+/* Login Links */
+div#links-container{
+	padding-top:6px;
+	 height:26px;
+	 padding-left:45px;
+}
+div#links-container div.login_links{
+    float:left;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Geneva, sans-serif;
+	padding: 8px 10px 2px 20px;
+	color: #25587E;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    
+}
+
+
+
+
+div#links-container a{
+	color:#901212;
+	text-decoration: none;
+}
+div#links-container a:hover{ 
+	color:#000;
+    text-decoration: underline;
+}
+div#links-container span.icons{
+    display: block;
+    float:left;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

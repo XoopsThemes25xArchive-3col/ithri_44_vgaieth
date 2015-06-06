@@ -1,0 +1,44 @@
+  <div id="menu">
+				<div id="links-container" >
+	<div class="login_links">
+	 
+        <{if $xoops_isuser}>
+            <span class="icons">
+			    <a href="<{$xoops_url}>/user.php?op=logout"><img src="<{$xoops_imageurl}>icons/exit.png" title="Déconnexion" /></a>&nbsp; &nbsp;  
+			    <a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl icons/profile.png}>" alt="Mon profil" title="Voir son profil" /></a>&nbsp; &nbsp; 
+            	 <{xoInboxCount assign=pmcount}>
+				 
+            	<a href="<{$xoops_url}>/notifications.php" title="Notifications"><img src="<{$xoops_imageurl}>icons/alerts.png" alt="Notifications" /></a>&nbsp; &nbsp; 
+				<{if $pmcount}><!-- si j'ai des messages --><a href="<{xoAppUrl www/viewpmsg.php}>"><img src="<{xoImgUrl icons/emailin.png}>" 
+				alt="(<{$pmcount}>) Messages" title="Vous avez <{$pmcount}> messages non lues" />&nbsp; &nbsp; 
+                <{else}>
+				
+				<a href="<{$xoops_url}>/viewpmsg.php" title="Private Messages"><img src="<{$xoops_imageurl}>icons/email.png" alt="Messages" /><{/if}></a>&nbsp; &nbsp; 
+				<{if $xoops_isadmin}>
+			<!--administration de module -->
+			<a target="_blank" href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl icons/admin.png}>" alt="Administration" 
+			title="Afficher la zone d'administration" /></a>
+			<{/if}>
+			</span>
+            
+           
+        <{else}>
+            <a href="<{$xoops_url}>/modules/profile/register.php">Cree un compte ?</a><img src="<{xoImgUrl icons/cont.png}>" /> &nbsp;|&nbsp; 
+			<a href="<{$xoops_url}>/modules/user.php" title="" >Connexion</a><img src="<{xoImgUrl icons/ok.png}>" />
+        <{/if}>
+    	</div>
+		
+                <ul>
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="<{$xoops_url}>/modules/smartfaq/">F.a.q</a></li>
+                    <li><a href="<{$xoops_url}>/modules/eazydld/">Downloads</a></li>
+                    <li><a href="<{$xoops_url}>/modules/smartfaq/">FAQ</a></li>
+                    <li><a href="<{$xoops_url}>/modules/news/index.php?storytopic=2">Softnews</a></li>
+                    <li><a href="<{$xoops_url}>/modules/contact/" class="last">Contact</a></li>
+                </ul>    	
+    		</div> 
+        <!-- end of menu -->
+        </div>
+		</div>
+
+  
